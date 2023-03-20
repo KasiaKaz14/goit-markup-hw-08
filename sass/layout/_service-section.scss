@@ -1,12 +1,25 @@
 .service {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  @media screen and (max-width: 1199px) {
+    .service {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .service {
+      padding-bottom: 94px;
+    }
+    .service__item {
+      display: flex;
+    }
+
+    & .service__container {
+      margin-right: 30px;
+    }
+  }
 }
 
 .service__title {
