@@ -1,0 +1,132 @@
+.header {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #21212113;
+}
+
+.header__container {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.main-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+.main-logo:hover,
+.main-logo:focus {
+  color: var(--secondary-font-color, #2196f3);
+}
+
+.part-one-logo {
+  color: var(--secondary-font-color, #2196f3);
+}
+
+.part-two-logo {
+  color: var(--main-button-color, #000000);
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__pages {
+  color: var(--main-text-color);
+  font-family: var(--main-font, "Roboto", sans-serif);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__pages:hover,
+.nav__pages:focus {
+  color: var(--secondary-font-color);
+}
+
+.active {
+  color: var(--secondary-font-color);
+  position: relative;
+}
+
+.active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--secondary-font-color);
+  left: 0;
+  bottom: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.contact__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__contacts {
+  color: var(--paragraph-text-color);
+  font-family: var(--main-font, "Roboto", sans-serif);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__contacts:hover,
+.contact__contacts:focus {
+  color: var(--secondary-font-color, #2196f3);
+}
+
+.contact__icons-display {
+  fill: currentColor;
+  margin-right: 10px;
+}
