@@ -26,6 +26,7 @@
   padding: 40px;
 
   @media screen and (min-width: 320px) {
+    position: inherit;
     width: 95%;
     max-width: 450px;
     height: 95%;
@@ -33,7 +34,8 @@
     overflow: scroll;
   }
 
-  @media screen (min-width: 481px) and (max-width: 767px) {
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    position: inherit;
     width: 95%;
     max-width: 450px;
     height: 95%;
@@ -41,7 +43,7 @@
     overflow: scroll;
   }
 
-  @media screen (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 95%;
     max-width: 450px;
     height: 95%;
@@ -49,7 +51,7 @@
     overflow: scroll;
   }
 
-  @media screen (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -143,6 +145,14 @@
   width: 16px;
   height: 15px;
   visibility: hidden;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    position: absolute;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    position: absolute;
+  }
 }
 
 .svg-input:checked + .form-svg {
@@ -160,6 +170,18 @@
 
   border-radius: 2px;
   visibility: hidden;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    position: absolute;
+    top: 3.5px;
+    left: 2px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    top: 3.5px;
+    left: 2px;
+  }
 }
 
 .svg-input-second {
@@ -171,6 +193,16 @@
 .privacy-text {
   color: var(--paragraph-text-color);
   line-height: 1.7;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.8;
+  }
 }
 
 .send-btn {
